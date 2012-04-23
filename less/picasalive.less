@@ -1,0 +1,57 @@
+@rouge	: #690000;
+@orange	: #8b0101;                              
+@vert	: #339999;
+
+.shadow(@x, @y, @spread, @distance, @color){
+	-moz-box-shadow:  @x @y @spread @distance @color;
+	-webkit-box-shadow:  @x @y @spread @distance @color;
+	box-shadow: @x @y @spread @distance @color;
+}
+.shadowInset(@x, @y, @spread, @distance, @color){
+	-moz-box-shadow: inset @x @y @spread @distance @color;
+	-webkit-box-shadow: inset  @x @y @spread @distance @color;
+	box-shadow: inset @x @y @spread @distance @color;
+}
+.transform(@transformation){
+	-webkit-transform: @transformation !important;
+    -moz-transform: @transformation !important;
+    -o-transform: @transformation !important;
+    -ms-transform: @transformation !important;
+}
+.picasalive{
+
+	height: 560 / 16em;
+	position: relative;
+	overflow: hidden;
+	.shadowInset(0, 0, .5em , 0, #400);
+	text-align:left;
+	
+	img{
+		border: .315em white solid;
+	}
+	a{
+		position:absolute;
+	}
+	a:hover{
+		
+		z-index: 999;
+		img{
+			border-color: @vert;
+			.shadow(0, 0, .5em , 0, #400);
+		}
+		/*
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+		
+		.transform(rotate(0deg) scale(1.2));
+		*/
+	}
+}
+.picasalive-polaroid{
+	img{
+		border-bottom-width : 2em;
+	}
+}
