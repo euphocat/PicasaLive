@@ -34,7 +34,7 @@
 		images 				: new Array(),
 		opts 				: null,
 		frame				: null,
-		currentThumb	 	: 0,
+		currentThumb	 		: 0,
 		turns 				: 0,
 		interval 			: null,
 		
