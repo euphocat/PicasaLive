@@ -17,7 +17,7 @@ Dependencies
  - option : an easing library
 
 
-Usages
+Uses
 --------------------------------------
 
 	var paramPicasaLive = {
@@ -33,7 +33,7 @@ Usages
 	$("#myDivElement").picasalive(paramPicasaLive);
 
 
-Exemple
+Example
 --------------------------------------
 
 http://www.nicolasbaptiste.com/#perso
